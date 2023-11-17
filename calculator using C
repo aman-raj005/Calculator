@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+int main () {
+	int a,b ;
+char  option   ;
+printf("Welcome to Devils Calculator \n");
+printf("enter operator (i.e +,-,*,/)........ ");
+scanf("%c",& option);
+if (option =='+'){printf("you have entered PLUS Operator\n");}
+else if (option =='-'){printf("you have entered MINUS Operato\n");}
+else if (option =='*'){printf("you have entered PRODUCT Operator\n");}
+else if (option =='/'){printf("you have entered DIVISION Operator\n");}
+else  {printf("you have entered INVALID Operator\n");}
+printf("Enter first number....");
+scanf("%d",&a);
+printf("Enter second number.....");
+scanf("%d",&b);
+switch  (option) {
+
+ case '+' : printf("Sum of INPUT two numbers is %d\n.....", a+b);
+             break;
+ case '-' : printf("Difference of INPUT two numbers is %d\n.....",a-b);
+              break;
+case '*' : printf("Product  of INPUT two numbers is %d\n.....", a*b);
+               break;
+case '/' : printf("Division  of INPUT two numbers is %d\n.....",  a/b);
+               break;
+ default : "Thank you ";
+ break; };
+ {printf("Have a good day");}
+
+ return 0;}
